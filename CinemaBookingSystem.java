@@ -2,13 +2,17 @@
 /**
  * Write a description of class CinemaBookingSystem here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Don "Ghengis_Don" Santiago
+ * @version Alpha May 1st 2023
  */
 public class CinemaBookingSystem
 {
     // instance variables - replace the example below with your own
-    
+    private String UserID;
+    public String Film;
+    public String Showtime;
+    public String Projector;
+    public String Reserves;
 
     /**
      * Constructor for objects of class CinemaBookingSystem
