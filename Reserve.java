@@ -1,33 +1,25 @@
-
+import java.util.HashMap;
+import java.util.Map;
 /**
- * Write a description of class Reserve here.
- *
- * @author (your name)
- * @version (a version number or a date)
+ * The Reserve class will handle making, updating, and canceling 
+ * reservations for screenings and seats.
+ * So it is holding information about the seat availability 
+ * as well as ticket availability 
+ * @author Eli
+ * @version 2024.04.29
  */
 public class Reserve extends Alert
 {
     // instance variables - replace the example below with your own
-    private int x;
-
     /**
      * Constructor for objects of class Reserve
      */
     public Reserve()
     {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+        /**This map is created to hold information pertaining 
+        * to reservations being held for tickets and seating
+        */
+       reservations = new HashMap<>();
     }
 }
+
