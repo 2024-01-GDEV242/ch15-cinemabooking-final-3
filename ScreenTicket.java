@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Write a description of class ScreenTicket here.
@@ -5,29 +7,40 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ScreenTicket extends Reserve
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class ScreenTicket {
+    // Instance variable
+    private ArrayList<String> reservedSeats; // List of reserved seats
 
     /**
-     * Constructor for objects of class ScreenTicket
+     * Constructor for objects of class ScreenTicket.
+     * 
      */
-    public ScreenTicket()
-    {
-        // initialise instance variables
-        x = 0;
+    
+    public ScreenTicket(String[] seats) {
+        this.reservedSeats = new ArrayList<>(Arrays.asList(seats)); 
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Adds additional seats to the reservation.
+     * 
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void addSeats(String[] additionalSeats) {
+        reservedSeats.addAll(Arrays.asList(additionalSeats)); // Add seats to the ArrayList
+    }
+
+    /**
+     * Removes specified seats from the reservation.
+     * 
+     */
+    public void removeSeats(String[] removedSeats) {
+        reservedSeats.removeAll(Arrays.asList(removedSeats)); // Remove seats from the ArrayList
+    }
+
+    /**
+     * Get the list of reserved seats.
+     * 
+     */
+    public ArrayList<String> getReservedSeats() {
+        return reservedSeats;
     }
 }

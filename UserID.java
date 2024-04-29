@@ -24,7 +24,7 @@ public class UserID extends CinemaBookingSystem
         Contactnumber=null;
     }
     
-    public void UserID(String newFirst,String newLast,String Contactnumber)
+    public void UserID(String newFirst,String newLast,String newContactnumber)
     {
         // initialise instance variables
         userFirst=newFirst;
