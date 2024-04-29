@@ -15,8 +15,11 @@ public class Alert extends CinemaBookingSystem
      */
     public Alert()
     {
-        // initialise instance variables
-        x = 0;
+        // Once the reserved time is reached, the user will be notified to 
+        // travel to their reserved seat in their chosen theater immediately
+        System.out.println("You have reached your reserved time.");
+        System.out.println("Please head towards your reserved seat now.");
+        // Displays Theater and Seat location and current time
     }
 
     /**

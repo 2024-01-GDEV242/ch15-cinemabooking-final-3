@@ -15,8 +15,14 @@ public class Film extends ScreeningRoom
      */
     public Film()
     {
-        // initialise instance variables
-        x = 0;
+        // display amount of films present
+        System.out.println("The Current Amount of Movies Present Are: ");
+        System.out.println("5");
+        // amount may be random, but using 5 as an example
+        // displays amount of theaters present
+        System.out.println("The Current Amount of Theaters Present Are: ");
+        System.out.println("10");
+        System.out.println("For each movie, two theaters are showing them.");
     }
 
     /**

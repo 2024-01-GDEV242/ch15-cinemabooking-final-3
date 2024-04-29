@@ -24,8 +24,6 @@ public class FilmTitles extends Film
         Films.add("Movie 4");
         Films.add("Movie 5");
     
-        System.out.println("The movies available are "+Films);
-    
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         String element;
         int position, choice=0;
