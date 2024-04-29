@@ -1,33 +1,36 @@
 
 /**
- * Write a description of class Projector here.
+ * Projector determines if the movie showing will be in 3D or not.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Eli
+ * @version 2024.04.29
  */
-public class Projector extends Alert
+public class Projector extends Alert 
 {
-    // instance variables - replace the example below with your own
-    private int x;
+    // Variable to hold whether the movie will be in 3D or not
+    private boolean is3D; 
 
     /**
      * Constructor for objects of class Projector
      */
-    public Projector()
-    {
-        // initialise instance variables
-        x = 0;
+    public Projector() {
+        // Initialize is3D to false by default because movie will be standard
+        is3D = false; 
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * Set whether the movie will be in 3D or not
+     * @param is3D true if the movie will be in 3D, false if it is not
      */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public void set3D(boolean is3D) {
+        this.is3D = is3D;
+    }
+
+    /**
+     * Check if the movie will be in 3D
+     * will return true if the movie will be in 3D, false if it is not
+     */
+    public boolean is3D() {
+        return is3D;
     }
 }
