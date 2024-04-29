@@ -15,8 +15,13 @@ public class Showtime extends Alert
      */
     public Showtime()
     {
-        // initialise instance variables
-        x = 0;
+        // Displays info on time of screening for each theater, and their
+        // availability.
+        System.out.println("Movie 1 is being shown at Theater 1 and 2 at 2:00. Open seats found.");
+        System.out.println("Movie 1 is being shown at Theater 3 and 4 at 3:00. Open seats found.");
+        System.out.println("Movie 1 is being shown at Theater 4 and 5 at 4:00. Open seats found.");
+        System.out.println("Movie 1 is being shown at Theater 5 and 6 at 5:00. Open seats found.");
+        System.out.println("Movie 1 is being shown at Theater 7 and 8 at 6:00. Open seats found.");
     }
 
     /**
