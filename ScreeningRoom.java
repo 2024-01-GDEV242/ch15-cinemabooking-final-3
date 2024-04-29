@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @author (your name)
  * @version (a version number or a date)
  */
-public class ScreeningRoom extends FilmTitles
+public class ScreeningRoom extends Showtime
 {
     // instance variables - replace the example below with your own
     

@@ -5,7 +5,7 @@
  * @author Eli
  * @version 2024.04.29
  */
-public class Projector extends Alert 
+public class Projector extends ScreeningRoom 
 {
     // Variable to hold whether the movie will be in 3D or not
     private boolean is3D; 

@@ -7,7 +7,7 @@ import java.util.*;
  * @author Don "Ghengis_Don" Santiago
  * @version Alpha May 1st 2023
  */
-public class FilmTitles extends CinemaBookingSystem
+public class FilmTitles extends Film
 {
     // instance variables - replace the example below with your own
         
