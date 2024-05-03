@@ -13,7 +13,7 @@ public class FilmTitles extends Film
         
     private LinkedList<String>Films=new LinkedList<>();
     
-    public FilmTitles()
+    public FilmTitles() throws IOException
     {
         /**
          * addition of film titles to linked list
