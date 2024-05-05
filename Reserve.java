@@ -8,23 +8,15 @@ import java.util.Map;
  * @author Eli
  * @version 2024.04.29
  */
-public class Reserve extends Alert {
-    // instance variables to store reservations for screenings
-    private HashMap<String, ScreenTicket> reservations;
+class Reserve {
+    private HashMap<String, ScreenTicket> reservations; // Map to store reservations for screenings
 
-    /**
-     * Constructor for objects of class Reserve
-     */
     public Reserve() {
         // Initialize the reservations map
         reservations = new HashMap<>();
     }
 
-    /**
-     * Make a reservation for a screening with specified seats
-     * ScreeningID makes it possible to know which viewing room
-     * the arrangements for tickets and seating are for 
-     */
+    // Make a reservation for a screening with specified seats
     public void makeReservation(String screeningId, String[] seats) {
         // Create a new ScreenTicket for the screening and seats
         ScreenTicket ticket = new ScreenTicket(seats);
@@ -33,10 +25,7 @@ public class Reserve extends Alert {
         reservations.put(screeningId, ticket);
     }
 
-    /**
-     * Update an existing reservation by adding or removing seats
-     * 
-     */
+    // Update an existing reservation by adding or removing seats
     public void updateReservation(String screeningId, String[] additionalSeats, String[] removedSeats) {
         // Get the ScreenTicket for the specified screening
         ScreenTicket ticket = reservations.get(screeningId);  
@@ -47,14 +36,26 @@ public class Reserve extends Alert {
         }
     }
 
-    /**
-     * Give the user the ability to cancel a 
-     * reservation for a screening
-     * @param screeningId the ID of the screening
-     */
+    // Cancel a reservation for a screening
     public void cancelReservation(String screeningId) {
         // Remove the reservation for the specified screening
         reservations.remove(screeningId); 
+    }
+}
+
+class ScreenTicket {
+    private String[] seats;
+
+    public ScreenTicket(String[] seats) {
+        this.seats = seats;
+    }
+
+    public void addSeats(String[] additionalSeats) {
+        // Add additional seats to the existing seats array
+    }
+
+    public void removeSeats(String[] removedSeats) {
+        // Remove specified seats from the existing seats array
     }
 }
 
